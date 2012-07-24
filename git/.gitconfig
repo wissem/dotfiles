@@ -1,0 +1,20 @@
+[user]
+  name = wissem
+  email = riahi.wissem.tn@gmail.com
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+
+[apply]
+  whitespace = nowarn
+
+[alias]
+  unstage = reset HEAD
+
+[difftool]
+  prompt = false
+
+[interactive]
+  singlekey = true
