@@ -1,33 +1,30 @@
 # old bash_profile
 PATH=/usr/local/git/bin:$PATH
 
-alias ll='ls -al'
-alias htdocs='cd /Users/wissem/Dev/htdocs'
-alias acer='ping -n 192.168.1.6'
-alias acerc='ssh wisssem@192.168.1.6'
-alias cpwd='pwd | pbcopy'
-alias ovh='ssh root@5.196.227.177'
-
-alias gits='git status -sb'
-alias ga='git add'
-alias gc='git commit'
-alias cc='php app/console cache:clear'
-alias sfcache='sudo chmod +a "_www allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs && sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs'
-alias vhost='sudo vim /etc/apache2/extra/httpd-vhosts.conf'
 export PATH="/usr/local/mysql/bin:$PATH"
 
 
 export PATH="/usr/local/php5/bin:$PATH"
-
-
+export PATH="/Users/wissem/dev/selenium:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+
+NPM_PACKAGES="${HOME}/.npm-packages"
+
+PATH="$NPM_PACKAGES/bin:$PATH"
+
+# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
+unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+#ZSH_THEME="avit"
+ZSH_THEME="bira"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -102,3 +99,4 @@ export ANT_HOME="/Users/wissem/dev/Android/apache-ant"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.bash_profile

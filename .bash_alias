@@ -1,0 +1,21 @@
+# old bash_profile
+PATH=/usr/local/git/bin:$PATH
+
+alias ll='ls -alh'
+alias htdocs='cd /Users/wissem/Dev/htdocs'
+alias acer='ping -n 192.168.1.6'
+alias acerc='ssh wisssem@192.168.1.6'
+alias cpwd='pwd | pbcopy'
+alias solr='/Users/wissem/dev/solr-5.5.0/bin/solr start &&'
+
+alias gits='git status -sb'
+alias ga='git add'
+alias gc='git commit'
+alias push='git push'
+alias cc='php app/console cache:clear'
+alias sfcache='sudo chmod +a "_www allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs && sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs'
+alias vhost='sudo vim /etc/apache2/extra/httpd-vhosts.conf'
+
+
+alias selenium="java -jar /Users/wissem/dev/selenium/selenium-server-standalone-2.53.0.jar &"
+
