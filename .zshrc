@@ -6,6 +6,7 @@ export PATH="/usr/local/mysql/bin:$PATH"
 
 export PATH="/usr/local/php5/bin:$PATH"
 export PATH="/Users/wissem/dev/selenium:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
