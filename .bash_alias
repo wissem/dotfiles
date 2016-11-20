@@ -18,4 +18,5 @@ alias vhost='sudo vim /etc/apache2/extra/httpd-vhosts.conf'
 
 
 alias selenium="java -jar /Users/wissem/dev/selenium/selenium-server-standalone-2.53.0.jar &"
-
+alias cmpsr="php -d memory_limit=-1 -n /usr/local/bin/composer"
+alias php7="/usr/local/opt/php70/bin/php"
