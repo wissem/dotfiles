@@ -19,7 +19,10 @@ brew install zsh
 # install ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# todo: install iTerm2,
+# install powerlevel10k theme
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
+# install iterm2
 brew cask install iterm2
 
 # todo: setup git, PHPStorm settings, install docker for mac, download and install sublime text
